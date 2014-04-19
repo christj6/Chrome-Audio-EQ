@@ -12,6 +12,22 @@
     <body class="body">
         <!--a href="http://ejci.github.io/Chrome-Audio-EQ/" title="ejci.net" alt="ejci.net" target="_blank" class="info">i</a-->
 
+        <!-- new stuff:-->
+        <div class="ch-compressor-controls">
+            <a href="#" class="button compSwitch" id="compSwitch"><span class="indicator"></span>Compressor</a>
+        </div>
+
+        <table class="ch-compressor" cellspacing="0" cellpadding="0">
+            <tr class="sliders">
+                <td class="ch-compressor-volume">
+                <input id="ch-compressor-slider-0" class="ch-compressor-slider master" eq="master" type="range" min="0" step="0.01" max="2" value="1">
+                </td><td>
+                <input id="ch-compressor-slider-1" class="ch-compressor-slider" eq="32" type="range" min="-12" step="0.01" max="12" value="0">
+                </td>
+            </tr>
+        </table>
+        <!-- end of new stuff -->
+
         <div class="ch-eq-controls">
             <a href="#" class="button reset" id="reset"> Reset </a>
             <canvas class="ch-eq-chart" id="ch-eq-chart">
@@ -54,9 +70,7 @@
             <a href="http://lab.ejci.net/Chrome-Audio-EQ/" target="_blank" class="button">About</a>
             <a href="http://lab.ejci.net/Chrome-Audio-EQ/#FAQ" target="_blank" class="button" >Faq</a>
 			<span class="message"></span>
-
-            <a href="#" class="button custom" id="customPreset"></span>Add Custom</a>
-
+            <a href="#" class="button custom" id="customPreset"></span>Add Custom EQ Preset</a>
             <a href="#" class="button presets" id="presets">Presets
             <select id="presetsSelect">
             </select> </a>
