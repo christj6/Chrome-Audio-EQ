@@ -48,7 +48,10 @@
 }
 .button.custom /* new button I'm adding */
 {
-	width: 66px;
+	width: 90px;
+}
+.button.compSwitch { /* also new button I'm adding */
+	width: 90px;
 }
 .button.reset {
 	margin-top: 10px;
@@ -101,6 +104,63 @@
 	padding-left: 17px;
 	padding-top: 10px;
 }
+
+/* START OF NEW BUTTONS */
+.ch-compressor-controls 
+{
+	width: 50px;
+	height: 40px;
+	float: left;
+	margin-right: 20px;
+}
+/*
+.ch-compressor-chart {
+	width: 330px;
+	height: 40px;
+	float: right;
+	margin-right: 20px;
+}
+*/
+.ch-compressor-controls {
+	height: 40px;
+	padding: 0;
+	margin: 0;
+}
+.ch-compressor-slider {
+	-webkit-appearance: slider-vertical;
+	height: 100px;
+	width: 26px;
+	cursor: hand;
+}
+.ch-compressor {
+	width: 400px;
+	color: rgb(50,90,140);
+	margin-top: 0px;
+	margin-bottom: 0;
+	margin-right: 20px;
+}
+.ch-compressor td {
+	text-align: center;
+	width: 30px;
+}
+/*
+.ch-compressor .ch-compressor-label {
+	font-size: 10px;
+	line-height: 12px;
+}
+*/
+.ch-compressor .sliders {
+	height: 106px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.ch-compressor-slider.master {
+	width: 60px;
+}
+/* END OF NEW BUTTONS */
+
+
+
 .ch-eq-chart {
 	width: 330px;
 	height: 40px;
