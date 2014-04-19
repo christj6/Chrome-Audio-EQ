@@ -219,6 +219,18 @@ document.addEventListener("DOMContentLoaded", function() {
 			propagateData();
 		};
 
+		// NEW SWITCH
+		document.getElementById('compSwitch').onclick = function(ev) {
+			config.comp = !config.comp;
+			if (config.comp === true) {
+				document.getElementById('compSwitch').childNodes[0].classList.add('on');
+			} else {
+				document.getElementById('compSwitch').childNodes[0].classList.remove('on');
+			}
+			//logger.log(config);
+			propagateData();
+		};
+
 		document.getElementById('snap').onclick = function(ev) {
 			config.snap = !config.snap;
 			if (config.snap === true) {
