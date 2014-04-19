@@ -63,7 +63,8 @@ CONST.EQ = [{
 }];
 CONST.CONFIG = {
     snap : false,
-    mono : false
+    mono : false,
+    comp : false
 };
 PRESETS = [];
 
